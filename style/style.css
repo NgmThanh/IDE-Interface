@@ -71,7 +71,8 @@ html {
   position: relative;
 }
 
-.mid-container .virtual-kb .container-out-kb {
+/* ========== KEYBOARD ========== */
+.container-out-kb {
   background-color: purple;
   width: 100%;
   height: 100%;
@@ -86,7 +87,7 @@ html {
   position: relative;
 }
 
-.mid-container .virtual-kb .container-out-kb .line-kb {
+.container-out-kb .line-kb {
   width: 100%;
   height: 20%;
   display: -webkit-box;
@@ -98,14 +99,50 @@ html {
           flex-flow: row nowrap;
 }
 
-.mid-container .virtual-kb .container-out-kb .line1, .mid-container .virtual-kb .container-out-kb .line3, .mid-container .virtual-kb .container-out-kb .line5 {
+.container-out-kb .line1, .container-out-kb .line2, .container-out-kb .line3, .container-out-kb .line4, .container-out-kb .line5 {
+  position: relative;
+  padding: 1px;
+}
+
+.container-out-kb .line1--key1, .container-out-kb .line1--key2, .container-out-kb .line1--key3, .container-out-kb .line1--key4, .container-out-kb .line1--key5, .container-out-kb .line1--key6, .container-out-kb .line1--key7, .container-out-kb .line1--key8, .container-out-kb .line1--key9, .container-out-kb .line1--key10, .container-out-kb .line1--key11, .container-out-kb .line1--key12, .container-out-kb .line1--key13, .container-out-kb .line1--key14, .container-out-kb .line1--key15, .container-out-kb .line2--key1, .container-out-kb .line2--key2, .container-out-kb .line2--key3, .container-out-kb .line2--key4, .container-out-kb .line2--key5, .container-out-kb .line2--key6, .container-out-kb .line2--key7, .container-out-kb .line2--key8, .container-out-kb .line2--key9, .container-out-kb .line2--key10, .container-out-kb .line2--key11, .container-out-kb .line2--key12, .container-out-kb .line2--key13, .container-out-kb .line2--key14, .container-out-kb .line2--key15, .container-out-kb .line3--key1, .container-out-kb .line3--key2, .container-out-kb .line3--key3, .container-out-kb .line3--key4, .container-out-kb .line3--key5, .container-out-kb .line3--key6, .container-out-kb .line3--key7, .container-out-kb .line3--key8, .container-out-kb .line3--key9, .container-out-kb .line3--key10, .container-out-kb .line3--key11, .container-out-kb .line3--key12, .container-out-kb .line3--key13, .container-out-kb .line3--key14, .container-out-kb .line3--key15, .container-out-kb .line4--key1, .container-out-kb .line4--key2, .container-out-kb .line4--key3, .container-out-kb .line4--key4, .container-out-kb .line4--key5, .container-out-kb .line4--key6, .container-out-kb .line4--key7, .container-out-kb .line4--key8, .container-out-kb .line4--key9, .container-out-kb .line4--key10, .container-out-kb .line4--key11, .container-out-kb .line4--key12, .container-out-kb .line4--key13, .container-out-kb .line4--key14, .container-out-kb .line4--key15, .container-out-kb .line5--key1, .container-out-kb .line5--key2, .container-out-kb .line5--key3, .container-out-kb .line5--key4, .container-out-kb .line5--key5, .container-out-kb .line5--key6, .container-out-kb .line5--key7, .container-out-kb .line5--key8, .container-out-kb .line5--key9, .container-out-kb .line5--key10, .container-out-kb .line5--key11, .container-out-kb .line5--key12, .container-out-kb .line5--key13, .container-out-kb .line5--key14, .container-out-kb .line5--key15 {
+  background-color: #fff;
+  width: 6.25%;
+  min-width: 6.25%;
+  height: 100%;
+  margin-right: 1px;
+  margin-top: 1px;
+}
+
+.container-out-kb .line1--key1:hover, .container-out-kb .line1--key2:hover, .container-out-kb .line1--key3:hover, .container-out-kb .line1--key4:hover, .container-out-kb .line1--key5:hover, .container-out-kb .line1--key6:hover, .container-out-kb .line1--key7:hover, .container-out-kb .line1--key8:hover, .container-out-kb .line1--key9:hover, .container-out-kb .line1--key10:hover, .container-out-kb .line1--key11:hover, .container-out-kb .line1--key12:hover, .container-out-kb .line1--key13:hover, .container-out-kb .line1--key14:hover, .container-out-kb .line1--key15:hover, .container-out-kb .line2--key1:hover, .container-out-kb .line2--key2:hover, .container-out-kb .line2--key3:hover, .container-out-kb .line2--key4:hover, .container-out-kb .line2--key5:hover, .container-out-kb .line2--key6:hover, .container-out-kb .line2--key7:hover, .container-out-kb .line2--key8:hover, .container-out-kb .line2--key9:hover, .container-out-kb .line2--key10:hover, .container-out-kb .line2--key11:hover, .container-out-kb .line2--key12:hover, .container-out-kb .line2--key13:hover, .container-out-kb .line2--key14:hover, .container-out-kb .line2--key15:hover, .container-out-kb .line3--key1:hover, .container-out-kb .line3--key2:hover, .container-out-kb .line3--key3:hover, .container-out-kb .line3--key4:hover, .container-out-kb .line3--key5:hover, .container-out-kb .line3--key6:hover, .container-out-kb .line3--key7:hover, .container-out-kb .line3--key8:hover, .container-out-kb .line3--key9:hover, .container-out-kb .line3--key10:hover, .container-out-kb .line3--key11:hover, .container-out-kb .line3--key12:hover, .container-out-kb .line3--key13:hover, .container-out-kb .line3--key14:hover, .container-out-kb .line3--key15:hover, .container-out-kb .line4--key1:hover, .container-out-kb .line4--key2:hover, .container-out-kb .line4--key3:hover, .container-out-kb .line4--key4:hover, .container-out-kb .line4--key5:hover, .container-out-kb .line4--key6:hover, .container-out-kb .line4--key7:hover, .container-out-kb .line4--key8:hover, .container-out-kb .line4--key9:hover, .container-out-kb .line4--key10:hover, .container-out-kb .line4--key11:hover, .container-out-kb .line4--key12:hover, .container-out-kb .line4--key13:hover, .container-out-kb .line4--key14:hover, .container-out-kb .line4--key15:hover, .container-out-kb .line5--key1:hover, .container-out-kb .line5--key2:hover, .container-out-kb .line5--key3:hover, .container-out-kb .line5--key4:hover, .container-out-kb .line5--key5:hover, .container-out-kb .line5--key6:hover, .container-out-kb .line5--key7:hover, .container-out-kb .line5--key8:hover, .container-out-kb .line5--key9:hover, .container-out-kb .line5--key10:hover, .container-out-kb .line5--key11:hover, .container-out-kb .line5--key12:hover, .container-out-kb .line5--key13:hover, .container-out-kb .line5--key14:hover, .container-out-kb .line5--key15:hover {
+  background-color: #303030;
+  color: white;
+}
+
+.container-out-kb .line1--key15 {
+  width: 15%;
+}
+
+.container-out-kb .line2--key1, .container-out-kb .line4--key1 {
+  width: 11%;
+}
+
+.container-out-kb .line3--key1 {
+  width: 14%;
+}
+
+.container-out-kb .line5--key2 {
+  width: 75%;
+}
+
+.container-out-kb .line1, .container-out-kb .line3, .container-out-kb .line5 {
   background-color: salmon;
 }
 
-.mid-container .virtual-kb .container-out-kb .line2, .mid-container .virtual-kb .container-out-kb .line4 {
+.container-out-kb .line2, .container-out-kb .line4 {
   background-color: sandybrown;
 }
 
+/* ========== END KEYBOARD ========== */
 .right-container {
   background-color: #303030;
   width: 17.5%;
